@@ -1,10 +1,10 @@
 <html>
-	<head>
+  <head>
     <meta charset="utf-8" />
-		<title>Orçamento pessoal</title>
+    <title>Orçamento pessoal</title>
 
-		<!-- Bootstrap início -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -14,10 +14,9 @@
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
-    <!-- Meu JS -->
     <script src="app.js"></script>
 
-	</head>
+  </head>
 
   <body>
 
@@ -103,17 +102,17 @@
           <input type="text" class="form-control" placeholder="Valor" id="valor" />
         </div>
 
-        <div class="col-md-2 d-flex justify-content-end" onclick="cadastrarDespesa()">
-          <button type="button" class="btn btn-primary">
+        <div class="col-md-2 d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
             <i class="fas fa-plus"></i>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Modal-->
-    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Modal -->
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div id="modal_titulo_div">
             <h5 class="modal-title" id="modal_titulo"></h5>
@@ -121,15 +120,14 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body" id="modal_conteudo">
-            
-          </div>
+          <div class="modal-body" id="modal_conteudo"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal" id="modal_btn">voltar</button>
+            <button type="button" data-dismiss="modal" id="modal_btn">Voltar</button>
           </div>
         </div>
       </div>
     </div>
 
-  </body>	
+  </body> 
+
 </html>
